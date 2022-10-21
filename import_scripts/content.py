@@ -3,48 +3,53 @@ import re
 
 from grab import Grab
 
-LIMIT = 1
+LIMIT = 3
 
-
-ctr = 0
-
-# TODO: spider the website
-filename = 'https://threehundredbeers.com/post/153053521719/mighty-oak-oscar-wilde'
-
-
-post = {}
+BASE_URL = 'https://threehundredbeers.com'
+START_PAGE = BASE_URL + '/the-beers'
 
 g = Grab()
-g.go(filename)
+g.go(START_PAGE)
 
-# title
-post['title'] = g.doc.select('//title')[0].text()
+# loop over the beer pages
+ctr = 0
 
-# tags
-tags = g.doc.select('//div[@class="tags"]/p/a')
-post['tags'] = list(elem.text() for elem in tags)
+beer_urls = g.doc.select('//div[@class="post-content"]/*/li/a')
 
-# sort out the body
-body = g.doc.select('//div[@class="post-content"]')[0].html()
+for url in beer_urls:
 
-regexp = re.compile(r'\<div class="tags"\>(.*?)\</div\>', re.DOTALL)
-body = regexp.sub('', body, )
+    beer_page = BASE_URL + url.attr('href')
 
-regexp = re.compile(r'\<h3>(.*?)\</h3>', re.DOTALL)
-body = regexp.sub('', body, 1)
+    print('Fetching: ', beer_page)
 
-# TODO: figure out how to resolve the URL references
+    g.go(beer_page)
 
+    post = {}
 
-post['body'] = body
+    # title
+    post['title'] = g.doc.select('//title')[0].text()
 
-pprint(post)
+    # tags
+    tags = g.doc.select('//div[@class="tags"]/p/a')
+    post['tags'] = list(elem.text() for elem in tags)
 
-# print(post['body'])
+    # sort out the body
+    body = g.doc.select('//div[@class="post-content"]')[0].html()
 
+    regexp = re.compile(r'\<div class="tags"\>(.*?)\</div\>', re.DOTALL)
+    body = regexp.sub('', body, )
 
-#    ctr += 1
+    regexp = re.compile(r'\<h3>(.*?)\</h3>', re.DOTALL)
+    body = regexp.sub('', body, 1)
 
-#    if ctr >= LIMIT:
-#        break
+    # WTF Tumblr?
+    body = body.replace('https://href.li/?', '')
 
+    post['body'] = body
+
+    pprint(post)
+
+    ctr += 1
+
+    if ctr >= LIMIT:
+        break
