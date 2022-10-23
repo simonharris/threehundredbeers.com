@@ -1,47 +1,47 @@
-INSERT INTO 3cbterms VALUES (NULL,'Abbey Beers','abbey-beers',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'Alt and Amber Beers','alt-and-amber-beers',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'Beers made with Fruit Spices Herbs and Seeds','beers-made-with-fruit-spices-herbs-and-seeds',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'Belgian Sour Red Beer','belgian-sour-red-beer',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'Belgian style Wheat Beers','belgian-style-wheat-beers',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'Best Bitters','best-bitters',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'Bieres de Garde','bieres-de-garde',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'Bitters','bitters',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'Black and Dark Lagers','black-and-dark-lagers',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'Bocks','bocks',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'Brown and Mild Ales','brown-and-mild-ales',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'Dortmunder Export','dortmunder-export',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'Extra Strong Beers and Bitters','extra-strong-beers-and-bitters',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'Golden Ales','golden-ales',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'India Pale Ales','india-pale-ales',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'Kölsch','kölsch',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'Lambic and Gueuze','lambic-and-gueuze',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'Old Ales Barley Wines and Vintage Ales','old-ales-barley-wines-and-vintage-ales',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'Pale Ales','pale-ales',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'Pale Lagers','pale-lagers',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'Pilsners','pilsners',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'Porters and Stouts','porters-and-stouts',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'Saison','saison',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'Scottish Ales','scottish-ales',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'Smoked Beer','smoked-beer',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'Steam Beer','steam-beer',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'Trappist Beers','trappist-beers',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'Vienna Red Märzen and Oktoberfest Beers','vienna-red-märzen-and-oktoberfest-beers',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'Wheat Beers','wheat-beers',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'Australia','australia',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'Austria','austria',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'Belgium','belgium',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'Czech Republic','czech-republic',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'England','england',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'France','france',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'Germany','germany',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'Ireland','ireland',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'Japan','japan',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'Lithuania','lithuania',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'Mexico','mexico',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'Netherlands','netherlands',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'Poland','poland',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'Russia','russia',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'Scotland','scotland',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'Sri Lanka','sri-lanka',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'USA','usa',NULL)
-INSERT INTO 3cbterms VALUES (NULL,'Wales','wales',NULL)
+INSERT INTO 3cbterms VALUES (NULL,'Abbey Beers','abbey-beers',0);
+INSERT INTO 3cbterms VALUES (NULL,'Alt and Amber Beers','alt-and-amber-beers',0);
+INSERT INTO 3cbterms VALUES (NULL,'Beers made with Fruit Spices Herbs and Seeds','beers-made-with-fruit-spices-herbs-and-seeds',0);
+INSERT INTO 3cbterms VALUES (NULL,'Belgian Sour Red Beer','belgian-sour-red-beer',0);
+INSERT INTO 3cbterms VALUES (NULL,'Belgian style Wheat Beers','belgian-style-wheat-beers',0);
+INSERT INTO 3cbterms VALUES (NULL,'Best Bitters','best-bitters',0);
+INSERT INTO 3cbterms VALUES (NULL,'Bieres de Garde','bieres-de-garde',0);
+INSERT INTO 3cbterms VALUES (NULL,'Bitters','bitters',0);
+INSERT INTO 3cbterms VALUES (NULL,'Black and Dark Lagers','black-and-dark-lagers',0);
+INSERT INTO 3cbterms VALUES (NULL,'Bocks','bocks',0);
+INSERT INTO 3cbterms VALUES (NULL,'Brown and Mild Ales','brown-and-mild-ales',0);
+INSERT INTO 3cbterms VALUES (NULL,'Dortmunder Export','dortmunder-export',0);
+INSERT INTO 3cbterms VALUES (NULL,'Extra Strong Beers and Bitters','extra-strong-beers-and-bitters',0);
+INSERT INTO 3cbterms VALUES (NULL,'Golden Ales','golden-ales',0);
+INSERT INTO 3cbterms VALUES (NULL,'India Pale Ales','india-pale-ales',0);
+INSERT INTO 3cbterms VALUES (NULL,'Kölsch','kölsch',0);
+INSERT INTO 3cbterms VALUES (NULL,'Lambic and Gueuze','lambic-and-gueuze',0);
+INSERT INTO 3cbterms VALUES (NULL,'Old Ales Barley Wines and Vintage Ales','old-ales-barley-wines-and-vintage-ales',0);
+INSERT INTO 3cbterms VALUES (NULL,'Pale Ales','pale-ales',0);
+INSERT INTO 3cbterms VALUES (NULL,'Pale Lagers','pale-lagers',0);
+INSERT INTO 3cbterms VALUES (NULL,'Pilsners','pilsners',0);
+INSERT INTO 3cbterms VALUES (NULL,'Porters and Stouts','porters-and-stouts',0);
+INSERT INTO 3cbterms VALUES (NULL,'Saison','saison',0);
+INSERT INTO 3cbterms VALUES (NULL,'Scottish Ales','scottish-ales',0);
+INSERT INTO 3cbterms VALUES (NULL,'Smoked Beer','smoked-beer',0);
+INSERT INTO 3cbterms VALUES (NULL,'Steam Beer','steam-beer',0);
+INSERT INTO 3cbterms VALUES (NULL,'Trappist Beers','trappist-beers',0);
+INSERT INTO 3cbterms VALUES (NULL,'Vienna Red Märzen and Oktoberfest Beers','vienna-red-märzen-and-oktoberfest-beers',0);
+INSERT INTO 3cbterms VALUES (NULL,'Wheat Beers','wheat-beers',0);
+INSERT INTO 3cbterms VALUES (NULL,'Australia','australia',0);
+INSERT INTO 3cbterms VALUES (NULL,'Austria','austria',0);
+INSERT INTO 3cbterms VALUES (NULL,'Belgium','belgium',0);
+INSERT INTO 3cbterms VALUES (NULL,'Czech Republic','czech-republic',0);
+INSERT INTO 3cbterms VALUES (NULL,'England','england',0);
+INSERT INTO 3cbterms VALUES (NULL,'France','france',0);
+INSERT INTO 3cbterms VALUES (NULL,'Germany','germany',0);
+INSERT INTO 3cbterms VALUES (NULL,'Ireland','ireland',0);
+INSERT INTO 3cbterms VALUES (NULL,'Japan','japan',0);
+INSERT INTO 3cbterms VALUES (NULL,'Lithuania','lithuania',0);
+INSERT INTO 3cbterms VALUES (NULL,'Mexico','mexico',0);
+INSERT INTO 3cbterms VALUES (NULL,'Netherlands','netherlands',0);
+INSERT INTO 3cbterms VALUES (NULL,'Poland','poland',0);
+INSERT INTO 3cbterms VALUES (NULL,'Russia','russia',0);
+INSERT INTO 3cbterms VALUES (NULL,'Scotland','scotland',0);
+INSERT INTO 3cbterms VALUES (NULL,'Sri Lanka','sri-lanka',0);
+INSERT INTO 3cbterms VALUES (NULL,'USA','usa',0);
+INSERT INTO 3cbterms VALUES (NULL,'Wales','wales',0);
