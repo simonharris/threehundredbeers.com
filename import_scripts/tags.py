@@ -19,7 +19,7 @@ with urllib.request.urlopen(SITE_URL) as response:
             slug = item.lower()
             tagtext = item.replace('-', ' ')
 
-            sql = "INSERT INTO 3cbtags VALUES (NULL,'{a}','{b}',NULL)".format(a = tagtext, b = slug)
+            sql = "INSERT INTO 3cbterms VALUES (NULL,'{a}','{b}',NULL)".format(a = tagtext, b = slug)
 
             #print(entry)
 
