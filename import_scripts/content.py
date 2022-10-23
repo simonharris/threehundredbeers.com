@@ -1,12 +1,19 @@
 from pprint import pprint
 import re
+import urllib.request
 
 from grab import Grab
 
-LIMIT = 3
+
+# FETCH_IMAGES = True
+FETCH_IMAGES = False
+
+LIMIT = 3 # 00
+DL_DIR = './_dl/'
 
 BASE_URL = 'https://threehundredbeers.com'
 START_PAGE = BASE_URL + '/the-beers'
+HOST_FOLDER = '/wp-content/uploads/2022/10/'
 
 g = Grab()
 g.go(START_PAGE)
@@ -44,6 +51,21 @@ for url in beer_urls:
 
     # WTF Tumblr?
     body = body.replace('https://href.li/?', '')
+
+    # sort out the images
+    imgs = g.doc.select('//div[@class="post-content"]/*/img')
+    img_urls = list(elem.attr('src') for elem in imgs)
+
+    for url in img_urls:
+
+        filename = url.split('/').pop()
+
+        # download the file
+        if FETCH_IMAGES:
+            urllib.request.urlretrieve(url, DL_DIR + filename)
+
+        regexp = re.compile(r'https://(.*)' + filename, re.DOTALL)
+        body = regexp.sub(HOST_FOLDER + filename, body)
 
     post['body'] = body
 
