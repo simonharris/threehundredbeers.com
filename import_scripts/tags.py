@@ -1,6 +1,5 @@
 import urllib.request
 from lxml import etree
-# from pprint import pprint
 
 
 SITE_URL = 'https://threehundredbeers.com/'
@@ -13,11 +12,17 @@ with urllib.request.urlopen(SITE_URL) as response:
     tagtree = tree.xpath("//li/a[contains(@href, 'tagged')]/@href")
 
     taglist = [elem.replace('/tagged/', '') for elem in tagtree]
-    # pprint(taglist)
 
     with open(r'./tags.txt', 'w') as fp:
         for item in taglist:
 
-            fp.write("%s\n" % item)
+            slug = item.lower()
+            tagtext = item.replace('-', ' ')
+
+            entry = "NULL,'{a}','{b}',NULL".format(a = tagtext, b = slug)
+
+            #print(entry)
+
+            fp.write("%s\n" % entry)
 
         print('Done')
