@@ -118,7 +118,10 @@ for url in beer_urls:
             urllib.request.urlretrieve(url, DL_DIR + filename)
 
         ### POSSIBLY A BUG HERE
-        regexp = re.compile(r'https://(.*)' + filename, re.DOTALL)
+        # https://64.media.tumblr.com/07df2628230e122778213ae4424717ef/
+        # https://64.media.tumblr.com/e139d1d398dc307ee5790c976c4342e0/5be7960d5b1c024b-ca/s500x750/9fa2a926f76f6d1462ecc6a37128ea9b709ac7dc.jpg
+
+        regexp = re.compile(r'https://[0-9]{0,10}.media.tumblr.com/[0-9a-z\-/]+' + filename, re.DOTALL)
         body = regexp.sub(HOST_FOLDER + filename, body)
 
     # body should be built by now
